@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/cards.js" defer></script>
+  <script src="js/backtotop.js" defer></script>
+  <script src="js/validate.js" defer></script>
+  <title>T-Task</title>
+</head>
+<body>
+  <div class="wrp">
+  <header class="header">
+    <div class="bg"></div>
+    <div class="header__logo">
+      <svg width="64" height="52" viewBox="0 0 64 52" class="header__logo__right" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M63.0559 15.8815L54.2119 15.8947L27.8012 40.7922H10.0354V23.4593L34.2348 0.848633L17.993 0.899213L0 17.6625V51.1511H34.0283L63.0418 23.5687L63.0559 15.8815Z"
+          fill="white" />
+      </svg>
+      <svg width="64" height="52" viewBox="0 0 64 52" class="header__logo__left" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M29.9721 0.848633L0.95858 28.4318L0.945312 36.1182L9.78841 36.1049L36.1991 11.2075H53.9649V28.5404L29.7656 51.1511L46.0074 51.1013L64.0004 34.338V0.848633H29.9721Z"
+          fill="white" />
+      </svg>
+    </div>
+    <nav class="header__nav">
+        <input type="checkbox" name="burger" id="burger__checkbox" class="burger__checkbox">
+        <label for="burger__checkbox" class="burger__nav__icon">
+          <span class="burger__icon"></span>
+        </label>
+      <ul class="header__nav__list">
+        <label for="burger__checkbox" class="burger__nav__icon close">
+          <span class="burger__icon close"></span>
+        </label>
+        <li class="header__nav__item"><a href="#" class="nav__item__link">Main</a></li>
+        <li class="header__nav__item"><a href="#" class="nav__item__link">Galery</a></li>
+        <li class="header__nav__item"><a href="#" class="nav__item__link">News</a></li>
+        <li class="header__nav__item"><a href="#" class="nav__item__link">Profile</a></li>
+        <div class="bg__burger"></div>
+      </ul>
+    </nav>
+    <div class="header__contact">
+      <h2 class="header__contact__phone">
+        +544 3490 00000
+      </h2>
+      <p class="header__contact__text">
+        Звони скорее!
+      </p>
+    </div>
+    <h1 class="header__title">Найдено 349 котов</h1>
+  </header>
+  <main class="main">
+    <div class="main__sort">
+      <ul class="main__sort__list">
+        <li class="main__sort__item">Сортировать по:</li>
+        <li class="main__sort__item">Цене</li>
+        <li class="main__sort__item">Возрасту</li>
+      </ul>
+    </div>
+    <div class="cards">
+    </div>
+    <a href="#" class="main__view__cards">Показать еще 20</a>
+  </main>
+  <footer class="footer">
+    <div class="footer__text">
+      <h4 class="footer__text__title">Успей купить!</h4>
+      <h5 class="footer__text__subscribe">Подпишись и успей словить все акции</h5>
+    </div>
+    <div class="footer__form">
+      <form action="" method="post">
+        <input class="footer__form__email" type="email" name="email" id="email">
+        <input class="footer__form__subscribe__checkbox" type="checkbox" name="subscribe" id="subscribe">
+        <label  class="footer__form__subscribe" for="subscribe">Подписаться на новости</label>
+        <button class="footer__form__button" type="submit" id='validate'>Подписаться</button>
+      </form>
+    </div>
+  </footer>
+  <a class="back_to_top" title="Наверх">↑</a>
+  </div>
+  <div id='error'></div>
+</body>
+</html>
