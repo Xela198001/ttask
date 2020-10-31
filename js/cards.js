@@ -5,7 +5,7 @@ for (var i = 0; i < card.cats.length; i++) {
   item.classList.add("card");
   const card_img = document.createElement("img");
   card_img.classList.add("card__img");
-  card_img.src = `../img/${card.cats[i].img}`;
+  card_img.src = `img/${card.cats[i].img}`;
   item.appendChild(card_img);
 
   if ((card.cats[i].sale !== "") && (card.cats[i].sale !== undefined) && (card.cats[i].sale !== 0)) {
